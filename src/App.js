@@ -15,18 +15,10 @@ function App() {
 		<Router>
 			<Cabecalho />
 			<Switch>
-				<Route exact path="/">
-					<Home />
-				</Route>
-				<Route path="/sobre">
-					<Sobre />
-				</Route>
-				<Route path="/posts/:id">
-					<Post />
-				</Route>
-				<Route>
-					<Pagina404 />
-				</Route>
+				<Route exact path="/" component={Home} />
+				<Route path="/sobre" component={Sobre} />
+				<Route path="/posts/:id" component={Post} />
+				<Route component={Pagina404} />
 			</Switch>
 		</Router>
 	);
