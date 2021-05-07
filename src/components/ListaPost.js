@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 
-import {busca} from '../api/api';
+import {busca} from '../services/api';
 
 export default function ListaPost({url}) {
 	const [posts, setPosts] = useState([]);

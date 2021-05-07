@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from 'react-router-dom';
 
-import {busca} from '../api/api';
+import {busca} from '../services/api';
 
 import '../assets/css/post.css';
 
