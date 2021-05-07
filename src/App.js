@@ -9,6 +9,7 @@ import Sobre from './pages/Sobre';
 import Pagina404 from './pages/Pagina404';
 import Cabecalho from './components/Cabecalho';
 import Post from './pages/Post';
+import Categoria from './pages/Categoria';
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 			<Switch>
 				<Route exact path="/" component={Home} />
 				<Route path="/sobre" component={Sobre} />
+				<Route path="/categoria/:id" component={Categoria} />
 				<Route path="/posts/:id" component={Post} />
 				<Route component={Pagina404} />
 			</Switch>
